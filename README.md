@@ -7,7 +7,7 @@ CompetitionPython/
 │
 ├── EASY/
 │ ├── reverseString.py
-│ ├── 
+│ ├── palindrome.py
 │ └── 
 │
 ├── MEDIUM/
