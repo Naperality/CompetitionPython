@@ -12,7 +12,8 @@ CompetitionPython/
 | ├── caeserCipherBasic.py
 │ ├── sumDigits.py
 | ├── factorial.py
-| 
+| ├── fizzBuzz.py
+|
 ├── MEDIUM/
 │ ├── 
 │ ├── 
