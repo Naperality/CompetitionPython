@@ -10,7 +10,8 @@ CompetitionPython/
 │ ├── palindrome.py
 │ ├── countVowels.py
 | ├── caeserCipherBasic.py
-│
+│ ├── sumDigits.py
+| 
 ├── MEDIUM/
 │ ├── 
 │ ├── 
