@@ -11,6 +11,7 @@ CompetitionPython/
 │ ├── countVowels.py
 | ├── caeserCipherBasic.py
 │ ├── sumDigits.py
+| ├── factorial.py
 | 
 ├── MEDIUM/
 │ ├── 
