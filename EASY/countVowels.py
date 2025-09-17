@@ -13,5 +13,10 @@ def countVowels(str):
             count += 1
     return count
 
+def fastWay(str):
+    vowels = 'aeiou'
+    return sum(1 for letter in str.lower() if letter in vowels)
+
 input_str = input('Input: ')
 print(f'Output: {countVowels(input_str)}')
+print(f'Output: {fastWay(input_str)}')
