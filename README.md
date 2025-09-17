@@ -13,7 +13,10 @@ CompetitionPython/
 │ ├── sumDigits.py
 | ├── factorial.py
 | ├── fizzBuzz.py
-|
+| ├── primeNumber.py
+| ├── primeNumber.py
+| ├── primeNumber.py
+| 
 ├── MEDIUM/
 │ ├── 
 │ ├── 
