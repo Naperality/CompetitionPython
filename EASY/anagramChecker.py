@@ -18,5 +18,9 @@ def anagramChecker(str1, str2):
             return 'NO'
     return 'YES'
 
+def fastWay(str1, str2):
+    return 'YES' if sorted(str1) == sorted(str2) else 'NO'
+
 input_str = input('Input: ').split()
 print(f'Output: {anagramChecker(input_str[0], input_str[1])}')
+print(f'Output: {fastWay(input_str[0], input_str[1])}')
