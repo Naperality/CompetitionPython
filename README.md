@@ -15,7 +15,7 @@ CompetitionPython/
 | ├── fizzBuzz.py
 | ├── primeNumber.py
 | ├── anagramChecker.py
-| ├── primeNumber.py
+| └──  fibonacci.py
 | 
 ├── MEDIUM/
 │ ├── 
