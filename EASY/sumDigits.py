@@ -13,5 +13,9 @@ def sumDigits(digit):
         digit //= 10
     return sum
 
+def fastWay(digit):
+    return sum(int(num) for num in str(digit))
+
 input_digit = int(input("Input: "))
 print(f'Output: {sumDigits(input_digit)}')
+print(f'Output: {fastWay(input_digit)}')
