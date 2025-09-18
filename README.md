@@ -18,8 +18,8 @@ CompetitionPython/
 | └──  fibonacci.py
 | 
 ├── MEDIUM/
-│ ├──   wordCounter.py
-│ ├── 
+│ ├── wordCounter.py
+│ ├── matrixTranspose.py
 │ └── 
 │
 ├── HARD/
