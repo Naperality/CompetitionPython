@@ -18,7 +18,7 @@ CompetitionPython/
 | └──  fibonacci.py
 | 
 ├── MEDIUM/
-│ ├── 
+│ ├──   wordCounter.py
 │ ├── 
 │ └── 
 │
