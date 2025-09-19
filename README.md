@@ -23,7 +23,7 @@ CompetitionPython/
 │ ├── gcdLcm.py
 │ ├── armstrongChecker.py
 │ ├── pangramChecker.py
-│ ├── gcdLcm.py
+│ ├── longestWord.py
 | 
 ├── HARD/
 │ ├── 
