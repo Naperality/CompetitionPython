@@ -22,7 +22,7 @@ CompetitionPython/
 │ ├── matrixTranspose.py
 │ ├── gcdLcm.py
 │ ├── armstrongChecker.py
-│ ├── gcdLcm.py
+│ ├── pangramChecker.py
 │ ├── gcdLcm.py
 | 
 ├── HARD/
