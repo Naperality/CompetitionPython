@@ -20,8 +20,11 @@ CompetitionPython/
 ├── MEDIUM/
 │ ├── wordCounter.py
 │ ├── matrixTranspose.py
-│ └── 
-│
+│ ├── gcdLcm.py
+│ ├── armstrongChecker.py
+│ ├── gcdLcm.py
+│ ├── gcdLcm.py
+| 
 ├── HARD/
 │ ├── 
 │ ├── 
