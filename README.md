@@ -27,7 +27,7 @@ CompetitionPython/
 │ ├── magicSquareChecker.py
 │ ├── binDecConverter.py
 │ ├── collatzSeq.py
-| └── .py
+| └── sudokuRowChecker.py
 ├── HARD/
 │ ├── 
 │ ├── 
