@@ -25,7 +25,7 @@ CompetitionPython/
 │ ├── pangramChecker.py
 │ ├── longestWord.py
 │ ├── magicSquareChecker.py
-│ ├── longestWord.py
+│ ├── binDecConverter.py
 │ ├── longestWord.py
 | └── .py
 ├── HARD/
