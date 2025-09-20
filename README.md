@@ -24,7 +24,10 @@ CompetitionPython/
 │ ├── armstrongChecker.py
 │ ├── pangramChecker.py
 │ ├── longestWord.py
-| 
+│ ├── magicSquareChecker.py
+│ ├── longestWord.py
+│ ├── longestWord.py
+| └── .py
 ├── HARD/
 │ ├── 
 │ ├── 
