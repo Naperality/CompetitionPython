@@ -34,8 +34,11 @@ CompetitionPython/
 │ └── 
 ├── ACCENTURE/
 │ ├── RatHouse.py
-│ ├── 
-│ └── 
-|
+│ ├── BinaryOperation.py
+│ ├── PasswordChecker.py
+│ ├── CountDifference.py
+│ ├── DifferenceofSum.py
+│ ├── LargeSmallSum.py
+| └──
 └── README.md # (This file) Project overview
 ```
