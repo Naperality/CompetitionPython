@@ -39,6 +39,9 @@ CompetitionPython/
 │ ├── CountDifference.py
 │ ├── DifferenceofSum.py
 │ ├── LargeSmallSum.py
+│ ├── ProductSmallestPair.py
+│ ├── NBaseNotation.py
+│ ├── MoveHyphen.py
 | └──
 └── README.md # (This file) Project overview
 ```
