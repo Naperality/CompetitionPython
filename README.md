@@ -49,7 +49,7 @@ CompetitionPython/
 │ ├── Calculate.py
 │ ├── EvenOddMatrix.py
 │ ├── TableSumMultiple.py
-│ ├── TableSumMultiple.py
+│ ├── PalindromeNumber.py
 | └──
 └── README.md # (This file) Project overview
 ```
