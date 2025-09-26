@@ -42,6 +42,14 @@ CompetitionPython/
 │ ├── ProductSmallestPair.py
 │ ├── NBaseNotation.py
 │ ├── MoveHyphen.py
+│ ├── NumberOfCarries.py
+│ ├── ReplaceCharacter.py
+│ ├── OperationsChoices.py
+│ ├── MaxExponents.py
+│ ├── Calculate.py
+│ ├── EvenOddMatrix.py
+│ ├── TableSumMultiple.py
+│ ├── TableSumMultiple.py
 | └──
 └── README.md # (This file) Project overview
 ```
