@@ -50,6 +50,7 @@ CompetitionPython/
 │ ├── EvenOddMatrix.py
 │ ├── TableSumMultiple.py
 │ ├── PalindromeNumber.py
+│ ├── DistanceCalculator.py
 | └──
 └── README.md # (This file) Project overview
 ```
