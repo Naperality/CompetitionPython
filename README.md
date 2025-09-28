@@ -29,7 +29,7 @@ CompetitionPython/
 │ ├── collatzSeq.py
 | └── sudokuRowChecker.py
 ├── HARD/
-│ ├── 
+│ ├── FullSudukoChecekr.py
 │ ├── 
 │ └── 
 ├── ACCENTURE/
@@ -50,7 +50,8 @@ CompetitionPython/
 │ ├── EvenOddMatrix.py
 │ ├── TableSumMultiple.py
 │ ├── PalindromeNumber.py
+│ ├── MaxNumIndex.py
 │ ├── DistanceCalculator.py
-| └──
+| └── AutobiographicalNumber.py
 └── README.md # (This file) Project overview
 ```
