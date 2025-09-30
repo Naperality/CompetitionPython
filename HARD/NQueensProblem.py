@@ -47,11 +47,10 @@ def solve_n_queens(N):
     else:
         return None
 
-if __name__ == "__main__":
-    N = int(input().strip())
-    sol = solve_n_queens(N)
-    if sol is None:
-        print("NO")
-    else:
-        for row in sol:
-            print(row.replace(" ", ""))
+N = int(input().strip())
+sol = solve_n_queens(N)
+if sol is None:
+    print("NO")
+else:
+    for row in sol:
+        print(row.replace(" ", ""))
