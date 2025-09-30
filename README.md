@@ -30,7 +30,15 @@ CompetitionPython/
 | └── sudokuRowChecker.py
 ├── HARD/
 │ ├── FullSudukoChecekr.py
-│ ├── 
+│ ├── NQueensProblems.py
+│ ├── MazeSolver.py
+│ ├── WordLadder.py
+│ ├── NQueensProblems.py
+│ ├── NQueensProblems.py
+│ ├── NQueensProblems.py
+│ ├── NQueensProblems.py
+│ ├── NQueensProblems.py
+│ ├── NQueensProblems.py
 │ └── 
 ├── ACCENTURE/
 │ ├── RatHouse.py
