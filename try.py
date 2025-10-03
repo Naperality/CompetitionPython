@@ -6,3 +6,5 @@ def Fact(n):
     return factorial(n)
 
 
+input_n = int(input("Factorial of : "))
+print(Fact(input_n))
