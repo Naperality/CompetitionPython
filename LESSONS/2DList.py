@@ -53,5 +53,4 @@ def IterativeColSum(matrix):
 
 
 
-print(SumOfAll(input_matrix), RowSum(input_matrix))
-print(ColSum(input_matrix), IterativeColSum(input_matrix))
+print(SumOfAll(input_matrix), RowSum(input_matrix), ColSum(input_matrix), IterativeColSum(input_matrix))
