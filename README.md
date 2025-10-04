@@ -34,7 +34,12 @@ CompetitionPython/
 │ ├── MazeSolver.py
 │ ├── WordLadder.py
 │ └── NQueensProblems.py
-|
+├── LESSONS/
+│ ├── 1DList.py
+│ ├── 2DList.py
+│ ├── MazeSolver.py
+│ ├── WordLadder.py
+│ └── NQueensProblems.py
 ├── ACCENTURE/
 │ ├── RatHouse.py
 │ ├── BinaryOperation.py
