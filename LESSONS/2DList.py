@@ -49,8 +49,5 @@ def IterativeColSum(matrix):
     max_len = max(len(row) for row in matrix)
     res = [sum(row[col] for row in matrix if col < len(row)) for col in range(max_len)]
     return ' '.join(str(num) for num in res)
-    
-
-
 
 print(SumOfAll(input_matrix), RowSum(input_matrix), ColSum(input_matrix), IterativeColSum(input_matrix))
