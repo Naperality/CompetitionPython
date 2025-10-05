@@ -32,6 +32,7 @@ def fibonacci(n):
         if r in (0,1):
             return r
         return fibo(r - 1) + fibo(r - 2)
+    return fibo(n)
 
 # Practice Problem 3: Sum of First N Numbers
 # Input:
@@ -39,4 +40,11 @@ def fibonacci(n):
 # Output:
 # 15
 
-print(factorial(input_n))
+def SumFirstN(n):
+    def SumFirst(r):
+        if r in (0,1):
+            return 1
+        return r + SumFirst(r-1)
+    return SumFirst(n)
+
+print(factorial(input_n), fibonacci(input_n), SumFirstN(input_n))

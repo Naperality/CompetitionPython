@@ -37,7 +37,7 @@ CompetitionPython/
 ├── LESSONS/
 │ ├── 1DList.py
 │ ├── 2DList.py
-│ ├── MazeSolver.py
+│ ├── Recursions.py
 │ ├── WordLadder.py
 │ └── NQueensProblems.py
 ├── ACCENTURE/
