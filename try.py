@@ -96,3 +96,15 @@ def summation(num):
     return sum(i for i in range(num+1))
     
 print(summation(5))
+
+def TwoSum(arr, target):
+    seen = {}
+    for index, x in enumerate(arr):
+        y = target - x
+        if y in seen:
+            return f'{x} = {index}, {y} = {seen[y]}'
+        seen[x] = index
+
+array = list(map(int, input("Enter array of Numbers: ").split()))
+target  = int(input("Enter target: "))
+print(TwoSum(array, target))
