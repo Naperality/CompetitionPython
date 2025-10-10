@@ -70,3 +70,8 @@ def generate_pairs(n):
     return [[x,y] for x in range(n+1) for y in range(x, n+1)]
 
 print(generate_pairs(int(input("Number: "))))
+
+def remove_vowels(string_):
+    return ''.join(letter for letter in string_ if letter.lower() not in 'aeiou')
+
+print(remove_vowels('Hello World 101'))
