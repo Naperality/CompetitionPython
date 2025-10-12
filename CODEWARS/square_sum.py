@@ -7,5 +7,5 @@
 def square_sum(num_arr):
     return sum(num**2 for num in num_arr)
 
-input_num = [map((int,input('Enter array: ').split()))]
+input_num = list(map(int, input("Enter Array: ").split()))
 print(square_sum(input_num))
