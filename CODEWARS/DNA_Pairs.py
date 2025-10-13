@@ -19,3 +19,5 @@
 
 def DNA_pairs(dna):
     return dna.translate(str.maketrans('ATCG', 'TAGC'))
+
+print(DNA_pairs(input('Enter DNA Sequence: ')))
