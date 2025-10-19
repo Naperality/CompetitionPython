@@ -7,6 +7,7 @@
 # The parameter of accum is a string which includes only letters from a..z and A..Z.
 
 def accum(string_):
-    return ('-'.join(letter*(index+1) for index, letter in enumerate(string_))).title()
+    # return ('-'.join(letter*(index+1) for index, letter in enumerate(string_))).title()
+    return '-'.join(letter.upper()+letter.lower()*index for index, letter in enumerate(string_))
 
 print(accum(input("Enter String: ")))
