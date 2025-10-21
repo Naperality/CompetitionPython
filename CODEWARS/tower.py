@@ -29,6 +29,6 @@ def build_tower(num):
     for i in range(1, num+1):
         asterisks = '*' * (2 * i -1)
         tower.append(asterisks.center(max_width, ' '))
-    return tower
+    return ''.join(line+'\n' for line in tower)
 
 print(build_tower(int(input('Enter height of tower: '))))
