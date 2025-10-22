@@ -15,9 +15,11 @@
 from collections import Counter
 
 def find_uniq(arr):
-    for val, num in Counter(arr).items():
-        if num == 1:
-            return val
+    # for val, num in Counter(arr).items():
+    #     if num == 1:
+    #         return val
+    a, b = set(arr)
+    return a if arr.count(a) == 1 else b
 
 
 print(find_uniq(list(map(float, input('Enter array of numbers: ').split()))))
