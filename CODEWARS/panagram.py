@@ -5,7 +5,10 @@
 # Given a string, detect whether or not it is a pangram. Return True if it is, False if not. 
 # Ignore numbers and punctuation.
 
+import string
+
 def panagram(string_):
-    return set('abcdefghiklmnopqrstyuvwxyz').issubset(set(string_))
+    # return set('abcdefghiklmnopqrstyuvwxyz').issubset(set(string_))
+    return set(string.ascii_lowercase).issubset(string_.lower())
 
 print(panagram(input('Enter Sentence: ')))
