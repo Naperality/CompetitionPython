@@ -34,11 +34,9 @@
 # so return false.
 
 def comp(array1, array2):
-    if len(array1) == len(array2):
-        pairs = list(zip(sorted(array1), sorted(array2)))
-    return False if sum(1 for n in pairs if n[0]**2 != n[1]) > 0 else True
+    return None not in (array1, array2) and sorted([i**2 for i in array1])==sorted(array2)
 
-# print(comp(list(map(int, input('Enter array1: ').split())), list(map(int, input('Enter array2: ').split()))))
+print(comp(list(map(int, input('Enter array1: ').split())), list(map(int, input('Enter array2: ').split()))))
 
 a1 = [121, 144, 19, 161, 19, 144, 19, 11]
 a2 = [11*21, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
