@@ -40,4 +40,10 @@ def longest_consec(strarr, k):
             longest_str = current_word
     return longest_str
 
+def short_sol(strarr, k):
+    if len(strarr) == 0 or k > len(strarr) or k <= 0: return ''
+    new_strarr = [''.join(strarr[i:i+k]) for i in range(len(strarr))]
+    return max(new_strarr, key = len)
+
 print(longest_consec(list(map(str, input('Enter Array: ').split())), int(input('Enter K: '))))
+print(short_sol(list(map(str, input('Enter Array: ').split())), int(input('Enter K: '))))
