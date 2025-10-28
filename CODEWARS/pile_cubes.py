@@ -17,7 +17,6 @@ def find_nb(m):
         cur += i**3
     if cur == m:
         return i
-    else:
-        return -1
+    return -1
+    
 print(find_nb(int(input('Enter Volume: '))))
-
