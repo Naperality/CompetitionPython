@@ -11,6 +11,7 @@
 # Write a code that gives out the total amount for different days(d).
 
 def transpo_calc(d):
-    return d*40-50 if d > 6 else d*40-20 if d > 3 else d*40
+    # return d*40-50 if d > 6 else d*40-20 if d > 3 else d*40
+    return d*40 - (d>2)*20 - (d>6)*30
 
 print(transpo_calc(int(input('Enter Number of Days: '))))
