@@ -21,6 +21,9 @@ def wave(people):
             list_res.append(people[:i]+people[i].upper()+people[i+1:])
     return list_res
 
+def fast_sol(people):
+    return [people[:i]+people[i].upper()+people[i+1:] for i in range(len(people)) if people[i].isalpha()]
 
+print(fast_sol(input('Enter Sentence: ')))
 print(wave(input('Enter Sentence: ')))
 
