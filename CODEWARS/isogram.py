@@ -4,7 +4,6 @@
 # Assume the empty string is an isogram. Ignore letter case.
 
 # Example: (Input --> Output)
-
 # "Dermatoglyphics" --> true
 # "aba" --> false
 # "moOse" --> false (ignore letter case)
