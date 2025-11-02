@@ -29,4 +29,8 @@ def countSmiles(arr):
             count += 1
     return count
 
+def count_fast(arr):
+    return sum(1 for face in arr if re.match(r'^[:;][-~]?[)D]$', face))
+
 print(countSmiles(list(map(str, input('Enter Smiles: ').split()))))
+print(count_fast(list(map(str, input('Enter Smiles: ').split()))))
