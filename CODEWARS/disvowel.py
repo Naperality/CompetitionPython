@@ -12,6 +12,6 @@
 # Note: for this kata y isn't considered a vowel.
 
 def disvowel(string_):
-    return 
+    return ''.join(c for c in string_ if c.lower() not in 'aeiou')
 
 print(disvowel(input("Enter String: ")))
