@@ -19,4 +19,9 @@ def highScore(x):
             res[val] = word
     return res[max(res.keys())]
 
+def fast_sol(x):
+    return max(x.split(), key=lambda word: sum(ord(ch) - ord('a')+1 for ch in word))
+
 print(highScore(input('Enter String of Words: ')))
+print(fast_sol(input('Enter String: ')))
+print(sorted(list(map(int, input('Nums: ').split())), key = lambda n: abs(n-6)))
