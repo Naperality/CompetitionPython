@@ -14,6 +14,7 @@
 # Note: base is a non-negative number, factor is a positive number.
 
 def check_factor(base, factor):
-    return not bool(base % factor)
+    # return not bool(base % factor)
+    return not base%factor
 
 print(check_factor(int(input('Enter Base: ')), int(input('Enter Factor: '))))
