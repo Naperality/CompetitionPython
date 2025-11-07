@@ -16,7 +16,6 @@
 # 1,2,9 -> false 
 
 def triangle_checker(a,b,c):
-    if min(a,b,c) < 1: return False
     return (a+b>c and a+c>b and b+c>a)
 
 print(triangle_checker(*map(int, input('Enter 3 Sides: ').split())))
