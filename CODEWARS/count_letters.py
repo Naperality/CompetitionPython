@@ -13,6 +13,7 @@
 from collections import Counter
 
 def letter_count(str_, letter_):
-    return Counter(str_).get(letter_) if letter_ in str_ else 0
+    # return Counter(str_).get(letter_) if letter_ in str_ else 0
+    return str_.count(letter_)
 
 print(letter_count(input('Enter String: '), input('Enter Letter to Count: ')))
