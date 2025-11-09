@@ -21,6 +21,13 @@ def persistence(num):
         num = current_product
     return count
 
-
+def persistence_rec(num):
+    if num < 10: return 0
+    mult = 1
+    while num > 0:
+        mult *= num%10
+        num //= 10
+    return persistence(mult) + 1
 
 print(persistence(int(input('Enter Number: '))))
+print(persistence_rec(int(input('Enter Number: '))))
