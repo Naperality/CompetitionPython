@@ -9,6 +9,7 @@
 # "a234"   -->  false
 
 def validate_pin(pin):
-    return sum(1 if num.isdigit() else -10 for num in pin) in (4,6)
+    # return sum(1 if num.isdigit() else -10 for num in pin) in (4,6)
+    return len(pin) in (4,6) and pin.isdigit()
 
 print(validate_pin(input('Enter Pin Number: ')))
