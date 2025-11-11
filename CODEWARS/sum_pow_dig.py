@@ -27,8 +27,11 @@
 # 90, 100 --> []
 # Enjoy it!!
 
-def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
-    # your code here
-    return []
+def sum_dig_pow(a, b):
+    list_, res = [num for num in range(a,b+1)], []
+    for num in list_:
+        if sum(int(c)**(i+1) for i,c in enumerate(str(num))) == num:
+            res.append(num)
+    return res
 
 print(sum_dig_pow(int(input('Enter Number A: ')), int(input('Enter Number B: '))))
