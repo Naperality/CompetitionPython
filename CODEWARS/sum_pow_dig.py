@@ -34,4 +34,8 @@ def sum_dig_pow(a, b):
             res.append(num)
     return res
 
+def one_liner_style(a, b):
+    return [x for x in range(a,b+1) if sum(int(c)**(i+1) for i,c in enumerate(str(x))) == x]
+
 print(sum_dig_pow(int(input('Enter Number A: ')), int(input('Enter Number B: '))))
+print(one_liner_style(int(input('Enter Number A: ')), int(input('Enter Number B: '))))
