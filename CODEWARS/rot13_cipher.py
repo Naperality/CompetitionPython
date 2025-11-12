@@ -9,6 +9,13 @@
 # Please note that using encode is considered cheating.
 
 def rot13(message):
-    pass
+    res = ''
+    for l in message:
+        if l.isalpha():
+            base = ord('A') if l.isupper() else ord('a')
+            res += chr((((ord(l)-base)+13)%26)+base)
+        else:
+            res += l
+    return res
 
 print(rot13(input('Enter String: ')))
