@@ -18,4 +18,8 @@ def rot13(message):
             res += l
     return res
 
+def one_liner_style(message):
+    return ''.join(chr((ord('A') if l.isupper() else ord('a')) + ((ord(l)-(ord('A') if l.isupper() else ord('a')) + 13)%26) ) if l.isalpha() else l for l in message)
+
+print(one_liner_style(input('Enter String to Encode: ')))
 print(rot13(input('Enter String: ')))
