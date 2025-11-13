@@ -8,6 +8,7 @@
 # --> [1, 2, 3, 4]
 
 def between(a,b):
-    return [d for d in range(a,b+1)]
+    # return [d for d in range(a,b+1)]
+    return list(range(a,b+1))
 
 print(between(int(input('Enter A: ')), int(input('Enter B: '))))
