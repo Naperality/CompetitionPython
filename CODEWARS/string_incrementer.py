@@ -37,5 +37,6 @@ def increment_string_v2(string_):
     if tail_str == '': return head_str+'1'
     return head_str+str(int(tail_str)+1).zfill(len(tail_str))
 
+
 print(increment_string(input('Enter String: ')))
 print(increment_string_v2(input('Enter Word with Number or None: ')))
