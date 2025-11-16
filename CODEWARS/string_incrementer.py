@@ -31,5 +31,11 @@ def increment_string(s):
         new_num_str = f'{incremented_num:0{num_len}d}'
         return text_part + new_num_str
 
+def increment_string_v2(string_):
+    head_str = string_.rstrip('0123456789')
+    tail_str = string_[len(head_str):]
+    if tail_str == '': return head_str+'1'
+    return head_str+str(int(tail_str)+1).zfill(len(tail_str))
 
 print(increment_string(input('Enter String: ')))
+print(increment_string_v2(input('Enter Word with Number or None: ')))
