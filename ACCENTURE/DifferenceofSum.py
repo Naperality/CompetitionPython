@@ -19,7 +19,8 @@
 # 90
 
 def differenceOfSum(n,m):
-    return sum(num for num in range(1,m+1) if num % n != 0) - sum(num for num in range(1,m+1) if num % n == 0)
+    # return sum(num for num in range(1,m+1) if num % n != 0) - sum(num for num in range(1,m+1) if num % n == 0)
+    return sum(num if num%n else -num for num in range(1,m+1))
 
 input_n = int(input("n: "))
 input_m = int(input("m: "))
