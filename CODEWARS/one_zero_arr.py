@@ -14,6 +14,7 @@
 # Testing: [1, 0, 1, 1] ==> 11
 # However, the arrays can have varying lengths, not just limited to 4.
 def bin_dec(arr_):
-    return int(''.join(str(x) for x in arr_),2)
+    # return int(''.join(str(x) for x in arr_),2)
+    return int(''.join(map(str,arr_)),2)
 
 print(bin_dec(list(map(int, input('Enter array of zeroes and ones: ').split())))) 
