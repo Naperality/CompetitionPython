@@ -52,6 +52,16 @@ def fasterSolution(string_num):
     
     return len(set(string_num))
 
+def other_sol(str_n):
+    res = 0
+    for i,n in enumerate(str_n):
+        if str_n.count(str(i)) != int(n):
+            return 0
+        if n != '0':
+            res+=1
+    return res
+
 input_string_num = input("n: ")
 print(findAutoCount(input_string_num))
 print(fasterSolution(input_string_num))
+print(other_sol(input('Enter string: ')))
