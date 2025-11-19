@@ -40,6 +40,12 @@ def largeSmallSum(arr):
 
     return even[1] + odd[1]
 
+def other_sol(arr):
+    if not arr or len(arr)<4:
+        return 0
+    return sorted(arr)[1]+sorted(arr)[-2]
+
 input_arr = list(map(int, input("arr: ").split()))
 
 print(largeSmallSum(input_arr))
+print(other_sol(input_arr))
