@@ -30,7 +30,11 @@ def MaxNumIndex(arr_num):
     for index, num in enumerate(arr_num):
         if max < num:
             max, pos = num, index
-    return f'{num} \n{index}'
+    return f'{num} \n{pos}'
+
+def other_sol(arr_):
+    return f'{max(arr_)} \n{arr_.index(max(arr_))}'
 
 input_arr = list(map(int, input().split()))
 print(MaxNumIndex(input_arr))
+print(other_sol(input_arr))
