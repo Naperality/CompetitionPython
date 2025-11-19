@@ -44,6 +44,9 @@ def operationsChoices(a, b, c):
             return a / b
         case _:
             return ''
+
+def other_sol(a,b,c):
+    return ['',a+b,a-b,a*b,a/b][c]
         
 input_c = int(input("c: "))
 input_a = int(input("a: "))
@@ -51,3 +54,4 @@ input_b = int(input("b: "))
 
 
 print(operationsChoices(input_a, input_b, input_c))
+print(other_sol(input_a, input_b, input_c))
