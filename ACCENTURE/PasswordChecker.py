@@ -44,9 +44,10 @@ def CheckPassword(str, n):
 def other_sol(str,n):
     if n<4 or str[0].isdigit() or '\/' in str:
         return 0
-    return 
+    return int(any(c.isupper() for c in str) and any(c.isdigit() for c in str) and not any(c.isspace() for c in str))
 
 input_str = input()
 input_len = input()
 
 print(CheckPassword(input_str, int(input_len)))
+print(other_sol(input_str, int(input_len)))
