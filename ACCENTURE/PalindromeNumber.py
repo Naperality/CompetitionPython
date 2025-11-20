@@ -25,7 +25,11 @@ def palindromeNumber(a, b):
         if str(num)[::-1] == str(num):
             result.append(num)
     return result
+
+def other_sol(a,b):
+    return [num for num in range(a,b+1) if str(num)[::-1] == str(num)]
             
 
 a, b = input().split(", ")
 print(palindromeNumber(int(a), int(b)))
+print(other_sol(int(a),int(b)))
