@@ -8,14 +8,16 @@
 # ‘ch1’ and ‘ch2’ as its arguments . 
 # Implement the function to modify and return the string 
 # ‘ str’ in such a way that all occurrences of ‘ch1’ in original 
-# string are replaced by ‘ch2’ and all occurrences of ‘ch2’  in original string are replaced by ‘ch1’.
+# string are replaced by ‘ch2’ and all occurrences of ‘ch2’  in 
+# original string are replaced by ‘ch1’.
 
 # Assumption: String Contains only lower-case alphabetical letters.
 
 # Note:
 
 # Return null if string is null.
-# If both characters are not present in string or both of them are same , then return the string unchanged.
+# If both characters are not present in string or both of them are same , 
+# then return the string unchanged.
 # Example:
 
 # Input:
@@ -32,8 +34,13 @@ def ReplaceCharacter(character_string, char1, char2):
     
     return temp
 
+def other_sol(str_, ch1, ch2):
+    if not str_:
+        return ''
+    return str_.translate(str.maketrans(ch1+ch2, ch2+ch1))
 input_str = input("Str: ")
 input_ch1 = input("ch1: ")
 input_ch2 = input("ch2: ")
 
 print(ReplaceCharacter(input_str, input_ch1, input_ch2))
+print(other_sol(input_str, input_ch1, input_ch2))
