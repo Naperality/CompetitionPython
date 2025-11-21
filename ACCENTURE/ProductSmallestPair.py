@@ -30,9 +30,16 @@ def ProductSmallestPair(sum, arr):
     
     sorted_arr = sorted(arr)
     return sorted_arr[0]*sorted_arr[1] if sorted_arr[0]+sorted_arr[1] <= sum else 0
+
+def other_sol(sum_, arr_):
+    if not arr_ or len(arr_)<2:
+        return -1
+    a,b = sorted(arr_)[:2]
+    return a*b if a+b<=sum_ else 0
     
 
 input_sum = int(input("sum: "))
 input_arr = list(map(int, input("Arr: ").split()))
 
 print(ProductSmallestPair(input_sum, input_arr))
+print(other_sol(input_sum, input_arr))
