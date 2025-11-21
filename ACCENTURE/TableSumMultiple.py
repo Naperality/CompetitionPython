@@ -2,7 +2,8 @@
 # You can click on compile and run anytime to check compilation/execution status. 
 # The code should be logically/syntactically correct.
 
-# Problem: Write a program to display the table of a number and print the sum of all the multiples in it.
+# Problem: Write a program to display the table of a number and print the sum of 
+# all the multiples in it.
 
 # Test Cases:
 
@@ -24,9 +25,13 @@ def MultipleSum(num):
     arr = [digit*num for digit in range(1,11)]
     result_sum = sum(arr)
 
-    result_str = ''.join(str(digit)+', ' if index != len(arr) else str(digit) for index, digit in enumerate(arr))
+    result_str = ''.join(str(digit)+', ' if index != len(arr)-1 else str(digit) for index, digit in enumerate(arr))
 
     print(result_str)
     print(result_sum)
 
+def other_sol(n):
+    return ', '.join(str(d*n) for d in range(1,11))+f'\n{sum(d*n for d in range(1,11))}'
+
 MultipleSum(int(input()))
+print(other_sol(int(input('Enter Number: '))))
