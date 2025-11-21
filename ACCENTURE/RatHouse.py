@@ -1,5 +1,6 @@
 # Problem Description :
-# The function accepts two positive integers ‘r’ and ‘unit’ and a positive integer array ‘arr’ of size ‘n’ 
+# The function accepts two positive integers ‘r’ and ‘unit’ and a positive integer 
+# array ‘arr’ of size ‘n’ 
 # as its argument ‘r’ represents the number of rats present in an area, 
 # ‘unit’ is the amount of food each rat consumes 
 # and each ith element of array ‘arr’ represents the amount of food present in 
@@ -36,10 +37,20 @@ def storageChecker(r, unit, n, arr):
         
     return 0
 
+def other_sol(r, unit, n, arr):
+    res = 0
+    if not arr:
+        return -1
+    for i,n in enumerate(arr):
+        res+=n
+        if res >= unit*r:
+            return i+1
+    return 0
+
 rats = int(input('r: '))
 capacity = int(input('unit: '))
 arr_size = int(input('n: '))
 arr = list(map(int, input('arr: ').split()))
 
 print(storageChecker(rats, capacity, arr_size, arr))
-
+print(other_sol(rats, capacity, arr_size, arr))
