@@ -14,8 +14,13 @@
 # they display in some languages. If you read 
 # "...It Should encode XXX", the "XXX" is the expected result, not the input!
 
-def duplicate_encoder(word):
+from collections import Counter
 
+def duplicate_encoder(word):
     return ''.join('(' if word.lower().count(c)==1 else ')' for c in word.lower())
 
+def other_sol(word):
+    return ''.join(')' if Counter(word)[c]>1 else '(' for c in word)
+
 print(duplicate_encoder(input('Enter String to Encode: ')))
+print(other_sol(input('Enter String: ')))
