@@ -14,7 +14,14 @@
 # assortment of direction letters ('n', 's', 'e', or 'w' only). It will never 
 # give you an empty array (that's not a walk, that's standing still!).
 
+from collections import Counter
+
 def is_valid_walk(walk):
     return len(walk)==10 and walk.count('n')==walk.count('s') and walk.count('e')==walk.count('w')
 
-print(is_valid_walk(list(map(int, input('Enter Array of Walk: ').split()))))
+def other_sol(walk):
+    dirs = Counter(walk)
+    return dirs['n'] == dirs['s'] and dirs['e'] == dirs['w'] and len(walk) == 10
+
+print(is_valid_walk(list(map(str, input('Enter Array of Walk: ').split()))))
+print(other_sol(list(map(str, input('Enter Array of Directions: ').split()))))
