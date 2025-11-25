@@ -46,7 +46,11 @@ def find_even(arr):
         left_s += current
     return -1
 
-
+def other_sol(arr):
+    for i in range(len(arr)):
+        if sum(arr[:i]) == sum(arr[i+1:]):
+            return i
+    return -1
 
 print(find_even(list(map(int, input('Enter Array: ').split()))))
 print(other_sol(list(map(int, input('Enter Arr: ').split()))))
