@@ -25,5 +25,8 @@ def human_years_cat_years_dog_years(human_years):
         return [human_years, 24, 24]
     else:
         return [human_years, 15, 15]
+
+def other_sol(human_years):
+    return [human_years, 24+(human_years-2)*4 if human_years!=1 else 15, 24+(human_years-2)*5 if human_years!=1 else 15]
     
 print(human_years_cat_years_dog_years(int(input('Enter Age: '))))
