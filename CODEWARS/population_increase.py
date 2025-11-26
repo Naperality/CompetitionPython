@@ -41,4 +41,8 @@ def nb_year(p0, percent, aug, p):
         if p0 >= p:
             return count
 
+def nb_year_rec(p0, percent, aug, p, year=0):
+    return year if p0>=p else nb_year_rec(p0+p0*(percent/100)+aug, percent, aug, p, year+1)
+
 print(nb_year(int(input('Enter population: ')), float(input('Enter percent growth: ')), int(input('Enter constant growth: ')), int(input('Enter target growth: '))))
+print(nb_year_rec(int(input('Enter population: ')), float(input('Enter percent growth: ')), int(input('Enter constant growth: ')), int(input('Enter target growth: '))))
