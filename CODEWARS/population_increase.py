@@ -34,6 +34,11 @@
 # count is an integer: 252.8 people round down to 252 persons.
 
 def nb_year(p0, percent, aug, p):
-    pass
+    count = 0
+    while True:
+        p0 += int(p0*(percent/100))+aug
+        count += 1
+        if p0 >= p:
+            return count
 
 print(nb_year(int(input('Enter population: ')), float(input('Enter percent growth: ')), int(input('Enter constant growth: ')), int(input('Enter target growth: '))))
