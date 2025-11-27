@@ -26,8 +26,25 @@
 # Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 def decrypt(encrypted_text, n):
-    return encrypted_text if n<=0 else decrypt(encrypted_text[::2]+encrypted_text[1::2], n-1)
-
+    text = encrypted_text
+    length = len(text)
+    for _ in range(n):
+        mid = length // 2
+        odd_chars = text[:mid]
+        even_chars = text[mid:]
+        
+        decrypted_list = []
+        max_len = max(len(even_chars), len(odd_chars))
+        
+        for i in range(max_len):
+            if i < len(even_chars):
+                decrypted_list.append(even_chars[i])
+            if i < len(odd_chars):
+                decrypted_list.append(odd_chars[i])
+                
+        text = "".join(decrypted_list)
+        
+    return text
 
 def encrypt(text, n):
     return text if n<=0 else encrypt(text[1::2]+text[::2], n-1)
