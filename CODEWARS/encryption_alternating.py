@@ -25,9 +25,15 @@
 # Simple Encryption #4 - Qwerty
 # Have fun coding it and please don't forget to vote and rank this kata! :-)
 
+def encrypt(text, n):
+    for _ in range(n):
+        text = text[1::2] + text[::2]
+    return text
+
 def decrypt(encrypted_text, n):
     text = encrypted_text
     length = len(text)
+    
     for _ in range(n):
         mid = length // 2
         odd_chars = text[:mid]
@@ -45,9 +51,6 @@ def decrypt(encrypted_text, n):
         text = "".join(decrypted_list)
         
     return text
-
-def encrypt(text, n):
-    return text if n<=0 else encrypt(text[1::2]+text[::2], n-1)
 
 print(encrypt(input('Enter Numbers: '), int(input('Enter Number of times: '))))
 print(decrypt(input('Enter Numbers: '), int(input('Enter Number of times: '))))
