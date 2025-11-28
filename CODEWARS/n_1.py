@@ -3,6 +3,7 @@
 # Example : n=5 --> [5,4,3,2,1]
 
 def reverse_seq(n):
-    return [i for i in range(n, 0, -1)]
+    # return [i for i in range(n, 0, -1)]
+    return list(range(n,1,-1))
 
 print(reverse_seq(int(input('Enter Number: '))))
