@@ -4,6 +4,6 @@
 
 def reverse_seq(n):
     # return [i for i in range(n, 0, -1)]
-    return list(range(n,1,-1))
+    return list(range(n,0,-1))
 
 print(reverse_seq(int(input('Enter Number: '))))
