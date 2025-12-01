@@ -17,3 +17,5 @@ print(bool_to_word(bool(input('Enter Boolean (True and Blank): '))))
 
 def get_age(age):
     return int(age[0])
+
+print(get_age(input('Enter Sentence: ')))
