@@ -18,6 +18,6 @@
 # You can assume that all inputs are valid integers.
 
 def round_to_next5(n):
-    return
+    return n + (5-n%5) if n%5 != 0 else n
 
 print(round_to_next5(int(input('Enter number: '))))
