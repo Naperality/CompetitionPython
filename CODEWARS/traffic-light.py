@@ -15,4 +15,9 @@ def update_light(current):
         'r':'green'
     }[current[0]]
 
+def other_sol(current):
+    colors = ['green','yellow','red']
+    return colors[(colors.index(current)+1)%3]
+
 print(update_light(input('Enter current light: ')))
+print(other_sol(input('Enter current Color: ')))
