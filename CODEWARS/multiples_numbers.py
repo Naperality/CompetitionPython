@@ -11,6 +11,7 @@
 # n = 2; limit = 5 --> [2, 4]
 
 def find_multiples(integer_, limit_):
-    return [n for n in range(1, limit_+1) if n%integer_==0]
+    # return [n for n in range(1, limit_+1) if n%integer_==0]
+    return list(range(integer_,limit_+1,integer_))
 
 print(find_multiples(int(input('Enter Number of Multiples: ')), int(input('Enter Limit: '))))
