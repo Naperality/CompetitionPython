@@ -9,4 +9,8 @@ import re
 def domain_name(url):
     return re.sub('www\.','',re.sub('https?://','',url)).split('.')[0]
 
+def other_sol(url):
+    return url.split('//')[-1].split('www.')[-1].split('.')[0]
+
 print(domain_name(input('Enter URL: ')))
+print(other_sol(input('Enter URL: ')))
