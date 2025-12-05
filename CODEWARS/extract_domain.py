@@ -4,7 +4,9 @@
 # * url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
 # * url = "https://www.cnet.com"                -> domain name = cnet"
 
+import re
+
 def domain_name(url):
-    return 
+    return re.sub('www\.','',re.sub('https?://','',url)).split('.')[0]
 
 print(domain_name(input('Enter URL: ')))
