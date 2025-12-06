@@ -7,7 +7,8 @@
 import re
 
 def domain_name(url):
-    return re.sub('www\.','',re.sub('https?://','',url)).split('.')[0]
+    # return re.sub('www\.','',re.sub('https?://','',url)).split('.')[0]
+    return re.sub('(https?://)|(www\.)', '', url).split('.')[0]
 
 def other_sol(url):
     return url.split('//')[-1].split('www.')[-1].split('.')[0]
