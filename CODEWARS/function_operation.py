@@ -64,3 +64,5 @@ def plus(b): return lambda a: a + b
 def minus(b): return lambda a: a - b
 def times(b): return lambda a: a * b
 def divided_by(b): return lambda a: a // b
+
+print(five(minus(one())))
