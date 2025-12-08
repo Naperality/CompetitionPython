@@ -36,4 +36,13 @@ def bouncing_ball(h, bounce, window):
         c_height*=bounce
     return passes
 
-print(bouncing_ball(int(input('Enter Height: ')), int(input('Enter Bounce: ')), int(input('Enter Window Height: '))))
+def other_sol(h, b, w):
+    if not (h > 0 and 0 < b < 1 and w < h):
+        return -1
+    return rec_sol(h*b,b,w,1)
+
+def rec_sol(h,b,w,n):
+    return n if h<=w else rec_sol(h*b,b,w,n+2)
+
+print(bouncing_ball(float(input('Enter Height: ')), float(input('Enter Bounce: ')), float(input('Enter Window Height: '))))
+print(other_sol(float(input('Enter Height: ')), float(input('Enter Bounce: ')), float(input('Enter Window Height: '))))
