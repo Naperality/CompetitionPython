@@ -36,4 +36,4 @@ def bouncing_ball(h, bounce, window):
         c_height*=bounce
     return passes
 
-print(bouncing_ball(int(input())))
+print(bouncing_ball(int(input('Enter Height: ')), int(input('Enter Bounce: ')), int(input('Enter Window Height: '))))
