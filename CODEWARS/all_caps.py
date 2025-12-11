@@ -23,4 +23,5 @@ def other_sol(inp):
     return inp.upper()==inp
 
 print(is_upper(input('Enter String: ')))
+
 print(other_sol(input('Enter String: ')))
