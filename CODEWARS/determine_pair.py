@@ -19,4 +19,6 @@ def open_or_senior(data):
     return ['Senior' if  pair[0]>54 and pair[1]>7 else 'Open' for pair in data]
 
 user_data = list(map(int, input('Enter all data seperated by spaces: ').split()))
+
+
 print(open_or_senior([user_data[i:i+2] for i in range(0, len(user_data), 2)]))
