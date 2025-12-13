@@ -24,6 +24,8 @@
 # title_case('the quick brown fox') # should return: 'The Quick Brown Fox'
 
 def title_case(title, minor_words=''):
-    pass
-
-print(title_case())
+    return ' '.join(word.title() if word.lower() not in minor_words.lower().split() or i==0 else word.lower() for i, word in enumerate(title.split()))
+    
+t = 'a clash of KINGS'
+m = 'a an the of'
+print(title_case(t,m))
