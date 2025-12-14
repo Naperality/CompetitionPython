@@ -31,10 +31,10 @@
 # principal. However it is best to take into consideration that if Desired Principal 
 # 'D' is equal to Principal 'P' this should return 0 Years.
 
-def calculate_years(principal, interest, tax, desired):
-    raise NotImplementedError("TODO: calculate_years")
+def calculate_years(principal, interest, tax, desired, n = 0):
+    return n if principal>=desired else calculate_years(principal+((principal*interest)-(tax*interest)), interest, tax, desired, n+1)
 
-print(calculate_years(int(input('Enter Principal: '))
-                      ,int(input('Enter Interest Rate: '))
-                      ,int(input('Enter Tax Rate: '))
-                      ,int(input('Enter Desired Sum: '))))
+print(calculate_years(float(input('Enter Principal: '))
+                      ,float(input('Enter Interest Rate: '))
+                      ,float(input('Enter Tax Rate: '))
+                      ,float(input('Enter Desired Sum: '))))
