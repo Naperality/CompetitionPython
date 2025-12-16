@@ -10,6 +10,7 @@
 # x = 2, n = 5  --> [2,4,6,8,10]
 
 def count_by(x, n):
-    return list(range(x,(x*n)+1,x))
+    # return list(range(x,(x*n)+1,x))
+    return [i*x for i in range(1,n+1)]
 
 print(count_by(int(input('Enter X: ')), int(input('Enter N: '))))
