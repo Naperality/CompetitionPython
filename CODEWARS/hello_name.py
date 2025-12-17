@@ -11,7 +11,7 @@
 # * With `name` not given 
 #   or `name` = ""        => return "Hello, World!"
 
-def hello(name):
-    return 'Hello, {}'.format(name.title() or 'World')
+def hello(name = ''):
+    return 'Hello, {}!'.format(name.title() or 'World')
 
 print(hello(input('Enter Name: ')))
