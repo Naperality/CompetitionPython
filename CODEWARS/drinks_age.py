@@ -19,6 +19,6 @@
 # 30 --> "drink whisky"
 
 def people_with_age_drink(age):
-    return 'drink {}'.format(['toddy','coke','beer','whiskey'][(age>14)+(age>=18)+(age>=21)])
+    return 'drink {}'.format(['toddy','coke','beer','whisky'][(age>=14)+(age>=18)+(age>=21)])
 
 print(people_with_age_drink(int(input('Enter Age: '))))
