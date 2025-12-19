@@ -19,6 +19,16 @@
 # All tests for this Kata are randomly generated.
 
 def solution(a):
-    return
+    if not a:
+        return -1
+    i, count = 0,0
+    visited = set()
+    while 0 <= i < len(a):
+        if i in visited:
+            return -1
+        visited.add(i)
+        i += a[i]
+        count += 1
+    return count
 
 print(solution(list(map(int,input('Enter Array: ').split()))))
