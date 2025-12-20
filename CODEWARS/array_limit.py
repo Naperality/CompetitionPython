@@ -5,6 +5,6 @@
 # You can assume all values in the array are numbers.
 
 def small_enough(array, limit):
-    return not any(array)
+    return not any(x>limit for x in array)
 
 print(small_enough(list(map(int,input("Enter Array: ").split())), int(input('Enter Limit: '))))
