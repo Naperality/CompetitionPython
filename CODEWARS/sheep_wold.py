@@ -21,6 +21,6 @@
 # Output: "Pls go away and stop eating my sheep"
 
 def warn_the_sheep(queue):
-    pass
+    return 'Pls go away and stop eating my sheep' if queue.index('wolf')==len(queue)-1 else 'Oi! Sheep number {}! You are about to be eaten by a wolf!'.format(len(queue)-1-queue.index('wolf'))
 
 print(warn_the_sheep(list(map(str,input('Enter List or Array: ')))))
