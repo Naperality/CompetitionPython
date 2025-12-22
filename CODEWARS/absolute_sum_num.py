@@ -19,4 +19,4 @@ def iterative_solution(number):
     return res
 
 print(sum_digits(int(input('Enter Number: '))))
-print(sum_digits(iterative_solution(int(input('Enter Number: ')))))
+print(iterative_solution(int(input('Enter Number: '))))
