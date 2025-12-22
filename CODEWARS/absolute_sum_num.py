@@ -8,6 +8,7 @@
 # -32 --> 5
 # Let's assume that all numbers in the input will be integer values.
 def sum_digits(number):
-    return sum(int(i) for i in str(abs(number)))
+    # return sum(int(i) for i in str(abs(number)))
+    return sum(map(int,str(abs(number))))
 
 print(sum_digits(int(input('Enter Number: '))))
