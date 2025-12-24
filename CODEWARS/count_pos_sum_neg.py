@@ -18,4 +18,12 @@ def count_positives_sum_negatives(arr):
         else: sum_+=n
     return [count_,sum_]
 
+def other_sol(arr):
+    if not arr:
+        return []
+    x = sum(1 for n in arr if n > 0)
+    y = sum(n for n in arr if n < 0)
+    return [x,y]
+
 print(count_positives_sum_negatives(list(map(int, input('Enter Array: ').split()))))
+print(other_sol(list(map(int, input('Enter Array: ').split()))))
