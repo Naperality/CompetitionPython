@@ -10,6 +10,7 @@
 # Happy coding!
 
 def reverse(st):
-    return ' '.join(word[::-1] for word in st[::-1].strip().split())
+    # return ' '.join(word[::-1] for word in st[::-1].strip().split())
+    return ' '.join(st.split()[::-1])
 
 print(reverse(input('Enter Sentence: ')))
