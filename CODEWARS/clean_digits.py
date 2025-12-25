@@ -16,4 +16,7 @@ import re
 def string_clean(s):
     return ''.join(c for c in s if not c.isdigit())
 
+def other_sol(s):
+    return re.sub('\d','',s)
+
 print(string_clean(input('Enter Sentence: ')), other_sol(input('Enter Sentence: ')))
