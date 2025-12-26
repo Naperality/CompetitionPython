@@ -9,6 +9,6 @@
 # All values will be positive integers or floats, or zero.
 
 def plural(n):
-    return n!=1
+    return n!=1 
 
 print(plural(int(input('Enter Number: '))))
