@@ -14,6 +14,6 @@
 
 
 def find_needle(haystack):
-    return haystack.index('needle')+1
+    return 'found the needle at position {}'.format(haystack.index('needle'))
 
 print(find_needle(list(map(str,input('Enter List of Materials: ').split()))))
