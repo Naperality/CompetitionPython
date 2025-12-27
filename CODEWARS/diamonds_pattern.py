@@ -33,4 +33,20 @@ def diamond(n):
         return None
     return '\n'.join(' '*((n - (n-2*abs((n//2) - i)))//2)+'*'*(n-2*abs((n//2) - i))  for i in range(n))
 
+def iterative(n):
+    if not n%2 or n<0:
+        return None
+    res  = ''
+    for i in range(n):
+        s,d = 0,0
+        if i < n/2:
+            d = i*2+1
+            s = (n-d)//2
+        else:
+            s = i - n//2
+            d = n - 2*s
+        res += ' '*s + '*'*d + '\n'
+    return res
+
 print(diamond(int(input('Enter Size of Diamond: '))))
+print(iterative(int(input('Enter Size: '))))
