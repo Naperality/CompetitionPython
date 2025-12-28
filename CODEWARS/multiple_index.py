@@ -11,4 +11,8 @@ def multiple_of_index(arr):
     res =[ arr[0]]if arr[0]==0 else []
     return res+[arr[i] for i in range(1,len(arr)) if abs(arr[i])%i==0]
 
-print(multiple_of_index(list(map(int,input('Enter List of Numbers: ')))))
+def other_sol(arr):
+    return [n for i,n in enumerate(arr) if (i==0 and n==0) or (i!=0 and n%i==0)]
+
+print(multiple_of_index(list(map(int,input('Enter List of Numbers: ').split()))),
+      other_sol(list(map(int,input('Enter Array: ').split()))))
