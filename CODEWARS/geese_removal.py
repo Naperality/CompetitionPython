@@ -17,6 +17,7 @@
 
 geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
 def goose_filter(birds):
-    return [bird for bird in birds if bird not in geese]
+    # return [bird for bird in birds if bird not in geese]
+    return list(filter(lambda x:x not in geese, birds))
 
 print(goose_filter(list(map(str,input('Enter List: ').split()))))
