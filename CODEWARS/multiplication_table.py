@@ -10,6 +10,6 @@
 # [[1,2,3],[2,4,6],[3,6,9]]
 
 def multiplication_table(size):
-    return 
+    return [list(range(i,(size*i)+1,i)) for i in range(1,size+1)]
 
-print(multiplication_table(int(input('Enter Size: ').split())))
+print(multiplication_table(int(input('Enter Size: '))))
