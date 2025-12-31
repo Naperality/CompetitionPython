@@ -17,4 +17,9 @@ def sort_array(source_array):
             res.append(source_array[i])
     return res
 
+def other_solution(source_array):
+    odds = sorted([n for n in source_array if n%2!=0],reverse=1)
+    return [n if n%2==0 else odds.pop() for n in source_array]
+
 print(sort_array(list(map(int,input('Enter Array: ').split()))))
+print(other_solution(list(map(int,input('Enter List of Numbers: ').split()))))
