@@ -41,6 +41,6 @@ def stock_list(stocklist, categories):
     return (' - ').join(f'({a} : {b})' for a,b in res.items()) if stocklist else ''
 
 print(stock_list(
-    ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"],
+    ["ABRT 132", "CXEF 670", "BKWRK 25", "BTSQZ 89", "DRTYM 60"],
     list(map(str,input('Enter Categories: ').split()))
 ))
