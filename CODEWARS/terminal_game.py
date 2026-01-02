@@ -9,6 +9,6 @@
 # move(3, 6) should equal 15
 
 def move(position, roll):
-    return 
+    return position+roll*2
 
 print(move(int(input('Enter Position: ')),int(input('Enter Roll: '))))
