@@ -31,8 +31,15 @@ class Fighter(object):
     __repr__=__str__
 
 def declare_winner(fighter1, fighter2, first_attacker):
-    return 
+    attacker = fighter1 if fighter1.name == first_attacker else fighter2
+    defender = fighter2 if fighter1.name == first_attacker else fighter1
 
+    while attacker.health > 0:
+        defender.health -= attacker.damage_per_attack
+        if defender.health <= 0:
+            return attacker.name
+        attacker, defender = defender, attacker
+        
 print(declare_winner(
     Fighter('John',10,2),
     Fighter('Dik',5,4),
