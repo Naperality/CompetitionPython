@@ -10,11 +10,13 @@
 # [1, 2, 1, 1, 3, 2] -> [1, 2, 3]
 
 def distinct(seq):
-    num,res = list(set(seq)), []
+    res = []
     for n in seq:
-        if n in num:
+        if n not in res:
             res.append(n)
-            num.remove(n)
     return res
+
+def distinct_sorted(seq):
+    return sorted(set(seq),key=seq.index)
 
 print(distinct(list(map(int,input('Enter List of Numbers: ').split()))))
