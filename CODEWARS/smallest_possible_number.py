@@ -9,6 +9,7 @@
 # [1, 9, 3, 1, 7, 4, 6, 6, 7]  ==> 134679
 
 def min_value(digits):
-    return int(''.join(str(n) for n in sorted(set(digits))))
+    # return int(''.join(str(n) for n in sorted(set(digits))))
+    return int(''.join(map(str,sorted(set(digits)))))
 
 print(min_value(list(map(int,input('Enter List of Numbers: ').split()))))
