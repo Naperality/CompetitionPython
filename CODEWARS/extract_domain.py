@@ -13,5 +13,10 @@ def domain_name(url):
 def other_sol(url):
     return url.split('//')[-1].split('www.')[-1].split('.')[0]
 
+def name_after_(url):
+    n = url.split('#')
+    return n[0]
+
 print(domain_name(input('Enter URL: ')))
 print(other_sol(input('Enter URL: ')))
+print(name_after_(input('Enter URL: ')))
