@@ -25,5 +25,11 @@ def delete_nth(order,max_e):
             continue
     return res
 
+def other_sol(order,max_e):
+    return [n for i,n in enumerate(order) if order[:i].count(n) < max_e]
 
 print(delete_nth(list(map(int, input('Enter List of Numbers: ').split())), int(input('Enter Max N of Times: '))))
+print(other_sol(
+    list(map(int,input('Enter List of Numbers: ').split())),
+    int(input('Enter Max Number of times: '))
+))
