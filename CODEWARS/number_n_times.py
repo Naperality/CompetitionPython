@@ -17,6 +17,13 @@
 # With list [20,37,20,21] and number 1, the result would be [20,37,21]
 
 def delete_nth(order,max_e):
-    pass
+    res = []
+    for n in order:
+        if res.count(n) < max_e:
+            res.append(n)
+        else:
+            continue
+    return res
+
 
 print(delete_nth(list(map(int, input('Enter List of Numbers: ').split())), int(input('Enter Max N of Times: '))))
