@@ -32,7 +32,11 @@
 # N.B. You should assume that all the test input will be valid, as specified above.
 
 def queue_time(customers, n):
-    pass # TODO
+    tills = [0]*n
+    for time in customers:
+        min_till = tills.index(min(tills))
+        tills[min_till] += time
+    return max(tills)
 
 print(queue_time(list(map(int,input('Enter Number of Customers: ').split())), int(input('Enter Number of Checkout: '))))
 
