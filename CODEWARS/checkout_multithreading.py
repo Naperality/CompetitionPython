@@ -36,7 +36,6 @@ def queue_time(customers, n):
     for time in customers:
         min_till = tills.index(min(tills))
         tills[min_till] += time
-        
     return max(tills)
 
 print(queue_time(list(map(int,input('Enter Number of Customers: ').split())), int(input('Enter Number of Checkout: '))))
