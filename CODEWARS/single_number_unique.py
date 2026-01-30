@@ -18,4 +18,5 @@ def stray_other(arr):
             return n
     return -1
 
+
 print(stray(list(map(int,input('Enter Numbers: ').split()))))
