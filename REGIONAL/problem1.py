@@ -30,6 +30,19 @@ def parcel_deliveries(parcel,cost,fuel):
         if max_deliveries <= 0:
             return i
 
+def other_sol(parcel,cost,fuel):
+    if not fuel: 
+        return -1
+    max_del = parcel*cost
+    for i,j in enumerate(fuel):
+        max_del -= j
+        if max_del<1: return i
+    return 0
+
 print(parcel_deliveries(int(input('Enter Number of Parcels: ')),
+                        int(input('Enter Cost of Fuel: ')),
+                        list(map(int,input('Enter list of checkpoints: ').split()))))
+
+print(other_sol(int(input('Enter Number of Parcels: ')),
                         int(input('Enter Cost of Fuel: ')),
                         list(map(int,input('Enter list of checkpoints: ').split()))))
