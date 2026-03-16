@@ -18,6 +18,14 @@ def abs_diff_count(array_,k,t):
         if abs(num - k)<t: count_+=1
     return count_ if count_>0 else -1
 
+def short_sol(array_,k,t):
+    res = sum(1 for num in array_ if abs(num-k)<t)
+    return res if res>0 else -1
+
 print(abs_diff_count(list(map(int,input('Enter Array: ').split())),
+                     int(input('Enter Target Value: ')), 
+                     int(input('Enter Tolerance: '))))
+
+print(short_sol(list(map(int,input('Enter Array: ').split())),
                      int(input('Enter Target Value: ')), 
                      int(input('Enter Tolerance: '))))
