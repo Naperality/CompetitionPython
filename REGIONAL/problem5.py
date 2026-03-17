@@ -12,19 +12,6 @@
 
 def divisible_count(x,y):
     return sum(n)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 print(divisible_count(int(input('Enter X: ')), int(input('Enter Y: '))))
