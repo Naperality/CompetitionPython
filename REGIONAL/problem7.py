@@ -12,6 +12,10 @@
 # 2
 
 def smallest_pair_prod(array_,l):
+    if not array_ or len(array_)<2: return -1
+    sorted_ = sorted(array_)
+    if sorted_[0]+sorted_[1] <= l: return sorted_[0]*sorted_[1]
+    return 0
     
 
 print(smallest_pair_prod(list(map(int,input('Enter Numbers: ').split())),
