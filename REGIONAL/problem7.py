@@ -13,8 +13,8 @@
 
 def smallest_pair_prod(array_,l):
     if not array_ or len(array_)<2: return -1
-    sorted_ = sorted(array_)
-    if sorted_[0]+sorted_[1] <= l: return sorted_[0]*sorted_[1]
+    a,b = sorted(array_)[:2]
+    if a+b <= l: return a*b
     return 0
     
 
