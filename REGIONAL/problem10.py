@@ -9,6 +9,12 @@
 # 1
 
 def rotate_string(a,b):
-    pass
+    if len(a) != len(b): return 0
+    stack_ = [l for l in a]
+    for _ in range(len(stack_)):
+        if ''.join(stack_)==b:
+            return 1
+        stack_.insert(0,stack_.pop())
+    return 0
 
 print(rotate_string(input('Enter String A: '), input('Enter String B: ')))
