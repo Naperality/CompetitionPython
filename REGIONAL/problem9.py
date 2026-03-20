@@ -10,10 +10,12 @@
 def is_prime(num):
     if num == 2: return True
     if num<2 or num%2==0: return False
-    target = int(num**0.5)
-    while target>1:
-        if num%target == 0: return False
-        target-=1
+    # target = int(num**0.5)
+    # while target>1:
+    #     if num%target == 0: return False
+    #     target-=1
+    for i in range(3,int(num**0.5)+1,2):
+        if num%i==0: return False
     return True
 
 def sum_prime_composite(array_):
