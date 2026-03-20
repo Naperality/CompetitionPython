@@ -17,4 +17,10 @@ def rotate_string(a,b):
         stack_.insert(0,stack_.pop())
     return 0
 
+def other_sol(a,b):
+    if len(a) != len(b): return 0
+    if b in (a+a): return 1
+    return 0
+
 print(rotate_string(input('Enter String A: '), input('Enter String B: ')))
+print(other_sol(input('Enter String A: '), input('Enter String B: ')))
