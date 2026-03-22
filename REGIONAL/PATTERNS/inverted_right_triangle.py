@@ -7,8 +7,8 @@
 # where r = row
 
 def inverted_right(row):
-    for i in range(row+1):
-        for j in range(row-i):
+    for i in range(row+1): # can use for i in range(row,0,-1)
+        for j in range(row-i): # can use for j in range(1,i+1)
             print(i+1, end=' ')
         print()
     return ''
@@ -20,5 +20,13 @@ def inverted_right_num_col(row):
         print()
     return ''
 
+def inverted_right_single_num(row):
+    for i in range(row+1):
+        for j in range(row-i):
+            print('5', end=' ')
+        print()
+    return ''
+
 print(inverted_right(int(input('Enter Number of Row: '))))
 print(inverted_right_num_col(int(input('Enter Number of Row: '))))
+print(inverted_right_single_num(int(input('Enter Number of Row: '))))
