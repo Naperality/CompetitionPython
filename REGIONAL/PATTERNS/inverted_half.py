@@ -7,8 +7,8 @@
 # where r = row
 
 def inverted_half(row):
-    for i in range(row+1):
-        for j in range(row+1):
+    for i in range(row):
+        for j in range(row+1-i):
             print(j, end=' ')
         print()
     return ''
