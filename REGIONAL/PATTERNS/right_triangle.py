@@ -47,12 +47,19 @@ def right_angled_tri(row):
     for i in range(row+1):
         x = 1
         for j in range(row,0,-1):
-            if j > i:
+            if j>i:
                 print(' ',end=' ')
             else:
                 print(x, end=' ')
                 x+=1
         print()
+    return ''
+
+def pascal_right_tri(row):
+    line = [1]
+    for _ in range(row):
+        print(' '.join(map(str,line)))
+        line = [1] + [line[j] + line[j+1] for j in range(len(line)-1)] + [1]
     return ''
 
 print(right_tri_num_rows(int(input('Enter Number of Rows: '))))
@@ -61,3 +68,4 @@ print(right_tri_odd(int(input('Enter Number of Row: '))))
 print(right_tri_row_index(int(input('Enter Number of Row: '))))
 print(right_tri_pattern1(int(input('Enter Number of Row: '))))
 print(right_angled_tri(int(input('Enter Number of Row: '))))
+print(pascal_right_tri(int(input('Enter Number of Row: '))))
