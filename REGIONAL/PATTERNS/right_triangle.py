@@ -20,5 +20,44 @@ def right_tri_num_col(row):
         print()
     return ''
 
+def right_tri_odd(row):
+    for i in range(row+1):
+        for j in range(i):
+            print(i*2-1, end=' ')
+        print()
+    return ''
+
+def right_tri_row_index(row):
+    for i in range(row+1):
+        for j in range(i,0,-1):
+            print(j, end=' ')
+        print()
+    return ''
+
+def right_tri_pattern1(row):
+    temp = 0
+    for i in range(row+1):
+        temp+=i
+        for j in range(i):
+            print(temp-j,end=' ')
+        print()
+    return ''
+
+def right_angled_tri(row):
+    for i in range(row+1):
+        x = 1
+        for j in range(row,0,-1):
+            if j > i:
+                print(' ',end=' ')
+            else:
+                print(x, end=' ')
+                x+=1
+        print()
+    return ''
+
 print(right_tri_num_rows(int(input('Enter Number of Rows: '))))
 print(right_tri_num_col(int(input('Enter Number of Rows: '))))
+print(right_tri_odd(int(input('Enter Number of Row: '))))
+print(right_tri_row_index(int(input('Enter Number of Row: '))))
+print(right_tri_pattern1(int(input('Enter Number of Row: '))))
+print(right_angled_tri(int(input('Enter Number of Row: '))))

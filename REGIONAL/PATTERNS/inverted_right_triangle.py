@@ -27,6 +27,14 @@ def inverted_right_single_num(row):
         print()
     return ''
 
+def inverted_right_tri_pattern1(row):
+    for i in range(row+1):
+        for j in range(row-i,0,-1):
+            print(j, end=' ')
+        print()
+    return ''
+
 print(inverted_right(int(input('Enter Number of Row: '))))
 print(inverted_right_num_col(int(input('Enter Number of Row: '))))
 print(inverted_right_single_num(int(input('Enter Number of Row: '))))
+print(inverted_right_tri_pattern1(int(input('Enter Number of Row: '))))
