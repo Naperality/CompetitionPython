@@ -1,0 +1,17 @@
+# 1 2 3 4 5 
+# 2 2 3 4 5 
+# 3 3 3 4 5 
+# 4 4 4 4 5 
+# 5 5 5 5 5
+
+def square_1(row):
+    for i in range(1,row+1):
+        for j in range(1,row+1):
+            if j<=i:
+                print(i,end=' ')
+            else:
+                print(j, end=' ')
+        print()
+    return ''
+
+print(square_1(int(input('Enter Number of Rows: '))))
