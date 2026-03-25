@@ -52,6 +52,12 @@ def right_tri_row_index(row):
         print()
     return ''
 
+# 1
+# 3 2
+# 6 5 4
+# 10 9 8 7
+# 15 14 13 12 11
+
 def right_tri_pattern1(row):
     temp = 0
     for i in range(row+1):
@@ -60,6 +66,13 @@ def right_tri_pattern1(row):
             print(temp-j,end=' ')
         print()
     return ''
+
+
+#         1
+#       1 2
+#     1 2 3
+#   1 2 3 4
+# 1 2 3 4 5
 
 def right_angled_tri(row):
     for i in range(row+1):
