@@ -1,7 +1,8 @@
-#    1 
-#   3 2 
-#  6 5 4 
-# 10 9 8 7
+#     * 
+#    * *
+#   * * *
+#  * * * *
+# * * * * *
 
 def pyramid_1(row):
     for i in range(1,row+1):
@@ -9,4 +10,16 @@ def pyramid_1(row):
         print('* '*i)
     return ''
 
+# * * * * * 
+#  * * * *
+#   * * *
+#    * *
+#     *
+
+def inverted_pyramid(row):
+    for i in range(row,0,-1):
+        print(' '*(row-i)+'* '*i)
+    return ''
+
 print(pyramid_1(int(input('Enter Number of Rows: '))))
+print(inverted_pyramid(int(input('Enter Number of Rows: '))))
