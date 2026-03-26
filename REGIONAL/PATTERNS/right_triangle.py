@@ -118,6 +118,22 @@ def multi_right_tri(row):
         print()
     return ''
 
+# 1 
+# 1 2
+# 1   3
+# 1     4
+# 1 2 3 4 5
+
+def hollow_right(row):
+    for i in range(1,row+1):
+        for j in range(1,i+1):
+            if j==1 or j==i or i==row:
+                print(j, end=' ')
+            else:
+                print(' ', end=' ')
+        print()
+    return ''
+
 print(right_tri_num_rows(int(input('Enter Number of Rows: '))))
 print(right_tri_num_col(int(input('Enter Number of Rows: '))))
 print(right_tri_odd(int(input('Enter Number of Row: '))))
@@ -126,3 +142,4 @@ print(right_tri_pattern1(int(input('Enter Number of Row: '))))
 print(right_angled_tri(int(input('Enter Number of Row: '))))
 print(pascal_right_tri(int(input('Enter Number of Row: '))))
 print(multi_right_tri(int(input('Enter Number of Rows: '))))
+print(hollow_right(int(input('Enter Number of Rows: '))))
