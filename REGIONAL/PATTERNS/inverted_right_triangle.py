@@ -34,7 +34,17 @@ def inverted_right_tri_pattern1(row):
         print()
     return ''
 
+def inverted_floyd(row):
+    x = 0
+    for i in range(1,row+1):
+        for j in range(row-i):
+            x+=1
+            print(x,end=' ')
+        print()
+    return ''
+
 print(inverted_right(int(input('Enter Number of Row: '))))
 print(inverted_right_num_col(int(input('Enter Number of Row: '))))
 print(inverted_right_single_num(int(input('Enter Number of Row: '))))
 print(inverted_right_tri_pattern1(int(input('Enter Number of Row: '))))
+print(inverted_floyd(int(input('Enter Number of Rows: '))))
