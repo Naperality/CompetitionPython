@@ -13,12 +13,25 @@ def inverted_right(row):
         print()
     return ''
 
+
+# 1 2 3 4 5 
+# 1 2 3 4
+# 1 2 3
+# 1 2
+# 1
+
 def inverted_right_num_col(row):
     for i in range(row+1):
         for j in range(row-i):
             print(j+1,end=' ')
         print()
     return ''
+
+# 5 5 5 5 5 
+# 5 5 5 5
+# 5 5 5
+# 5 5
+# 5
 
 def inverted_right_single_num(row):
     for i in range(row+1):
