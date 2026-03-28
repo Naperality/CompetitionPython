@@ -40,12 +40,23 @@ def inverted_right_single_num(row):
         print()
     return ''
 
+# 5 4 3 2 1 
+# 4 3 2 1
+# 3 2 1
+# 2 1
+# 1
+
 def inverted_right_tri_pattern1(row):
     for i in range(row+1):
         for j in range(row-i,0,-1):
             print(j, end=' ')
         print()
     return ''
+
+# 1 2 3 4 
+# 5 6 7
+# 8 9
+# 10
 
 def inverted_floyd(row):
     x = 0
