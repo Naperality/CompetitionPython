@@ -28,6 +28,18 @@ def pascal_pyramid(row):
         line = [1]+[line[j]+line[j+1] for j in range(len(line)-1)]+[1]
     return ''
 
+
+
+
+
+
+
+
+
+
+
+
+
 print(pyramid_1(int(input('Enter Number of Rows: '))))
 print(inverted_pyramid(int(input('Enter Number of Rows: '))))
 print(pascal_pyramid(int(input('Enter Number of Rows: '))))
