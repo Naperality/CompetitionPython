@@ -26,7 +26,15 @@ def letter_pattern(spacing_=3):
         # letter D
         for j in range(5):
             if i==0 or i==4 or j==0 or j==4:
-                print('O', end='')
+                print('D', end='')
+            else:
+                print(' ', end='')
+        print(' '*spacing_, end='')
+
+        # letter E
+        for j in range(5):
+            if i==0 or i==4 or j==0 or (i==2 and j<3):
+                print('E', end='')
             else:
                 print(' ', end='')
         print(' '*spacing_, end='')
