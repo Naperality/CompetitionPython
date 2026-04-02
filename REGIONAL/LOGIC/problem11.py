@@ -2,6 +2,6 @@
 import math
 def area_(side_ = 1):
     res = ((math.sqrt(5*(5+(2*math.sqrt(5))))/4))*side_**2
-    return f'Area is: {res}'
+    return f'Area is: {res:.2f}'
 
 print(area_(float(input('Enter one side: '))))
