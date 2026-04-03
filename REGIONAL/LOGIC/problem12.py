@@ -10,7 +10,7 @@
 
 def sol_(a,b):
     if len(a) != len(b): return 0
-    if b in (a+a): return 1
+    if sorted(a)==sorted(b): return 1
     return 0
 
-print(sol(input('Enter String A: '), input('Enter String B: ')))
+print(sol_(input('Enter String A: '), input('Enter String B: ')))
