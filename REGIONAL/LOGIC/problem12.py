@@ -13,10 +13,4 @@ def sol_(a,b):
     if sorted(a)==sorted(b): return 1
     return 0
 
-
-
-
-
-
-
 print(sol_(input('Enter String A: '), input('Enter String B: ')))
