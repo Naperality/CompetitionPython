@@ -10,3 +10,5 @@ def leap_year(year):
         return 'This is a leap year'
     else:
         return 'Not a leap year'
+
+print(leap_year(int(input('Enter year: '))))
