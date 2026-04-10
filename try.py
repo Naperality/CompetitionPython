@@ -1,9 +1,7 @@
-# Printer status: ready, printing, error, and offline
-# write function for green-ready, blue-printing, red-error, gray-anything
+str_ = 'Hello World: 80 o : o o'
+print(str_.count('o'))
+print(str_.translate(str.maketrans({'o':'','0':''})))
+print(str_.partition(':'))
 
-def printer_status(status_):
-    return {'READY':'green',
-            'PRINTING':'blue',
-            'ERROR':'red'}.get(str(status_).upper(),'gray')
-
-print(printer_status(input('Enter Printer Status: ')))
+str_1 = 'AAAAAAA'
+print([str_1[i:i+3] for i in range(0,len(str_1)-3+1,3) if str_1[i:i+3].startswith('A')])
