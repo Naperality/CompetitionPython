@@ -28,8 +28,8 @@ def password_validator(string_):
     return upper_&digit_&space_
 
 def other_sol(string_):
-    if len(string_)<5 or not string_[0].isalpha(): return 0
-    return 1 if any(l.isupper() for l in string_) and any(l.isdigit() for l in string_) and not any(l in '* ' for l in string_) else 0
+    if len(string_)<5 or not string_[0].isalpha() or any(l in ' *' for l in string_): return 0
+    return 1 if any(l.isupper() for l in string_) and any(l.isdigit() for l in string_) else 0
 
 print(password_validator(input('Enter Password: ')))
 print(other_sol(input('Enter string: ')))
