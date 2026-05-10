@@ -8,6 +8,14 @@ def max_substrings_length(arr_,k_):
         res+=temp
     return res
 
+
+
+
+
+
+
+
+
 print(max_substrings_length(
     list(map(int, input('Enter list of Numbers: ').split())),
     int(input('Enter K(number) max size of substring: '))
